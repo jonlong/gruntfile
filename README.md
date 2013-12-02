@@ -7,7 +7,7 @@ Use `.Gruntfile` to define your tasks, and edit the individual tasks as needed p
 A quick way to export this repo into an existing project, sans the `.git` folder:
 `svn export https://github.com/jonlong/gruntfile/trunk gruntfile`
 
-Alternatively, you can use a bash function like this:
+Alternatively, you can set up a bash function:
 ```bash
   ghexport() {
     URL=$1
