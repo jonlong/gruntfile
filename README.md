@@ -17,3 +17,31 @@ Alternatively, you can set up a bash function:
 ```
 And call it like this:
 `ghexport jonlong/gruntfile`
+
+Finally, for an all-in-one gruntfile import-and-install:
+```bash
+  gruntimport() {
+
+    # We need to list deps in package.json, so let's see if it exists first
+    if [ ! -f package.json ]; then
+      echo "package.json not found. Please add it to use gruntimport."
+      return 1
+    fi
+
+    ghexport jonlong/gruntfile
+    mv gruntfile/* .
+    rm -r gruntfile
+
+    npm install grunt --save-dev
+
+    # Install all the modules and save them to the package.json
+    # Assumes the filenames are grunt module names
+    for f in grunt/*
+    do
+      modulename=`basename $f .js`
+      npm install $modulename --save-dev
+    done
+  }
+  ```
+  ##Note
+  Just remember to name your individual module files after their npm counterparts for smooth installin'
