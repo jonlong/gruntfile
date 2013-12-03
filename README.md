@@ -6,7 +6,7 @@ Use `.Gruntfile` to define your tasks, and edit the individual tasks as needed p
 
 ## Usage
 
-I've always wanted to maintain a repo of commonly used Grunt configs, with the ability to toggle them on and off easily based on a project's needs. The scripts below are designed to help easily import a nice base into your working directory.
+I've always wanted to maintain a repo of commonly used Grunt configs, with the ability to easily toggle them on and off based on a project's needs. The scripts below are designed to help easily import a nice base into your working directory.
 
 A quick way to export this repo into an existing project, sans the `.git` folder:
 `svn export https://github.com/jonlong/gruntfile/trunk gruntfile`
