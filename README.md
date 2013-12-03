@@ -2,7 +2,7 @@
 
 A modular, easily configurable Gruntfile.  Graciously shared by [@cowboy](https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb).
 
-Use `.Gruntfile` to define your tasks, and edit the individual tasks as needed per-project.
+Use `.Gruntfile` to define your tasks, and edit the individual task files as needed per-project.
 
 ## Usage
 
