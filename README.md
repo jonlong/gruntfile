@@ -1,8 +1,12 @@
-#Gruntfile
+# Gruntfile
 
 A modular, easily configurable Gruntfile.  Graciously shared by [@cowboy](https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb).
 
 Use `.Gruntfile` to define your tasks, and edit the individual tasks as needed per-project.
+
+## Usage
+
+I've always wanted to maintain a repo of commonly used Grunt configs, with the ability to toggle them on and off easily based on a project's needs. The scripts below are designed to help easily import a nice base into your working directory.
 
 A quick way to export this repo into an existing project, sans the `.git` folder:
 `svn export https://github.com/jonlong/gruntfile/trunk gruntfile`
@@ -35,13 +39,13 @@ Finally, for an all-in-one gruntfile import-and-install:
     npm install grunt --save-dev
 
     # Install all the modules and save them to the package.json
-    # Assumes the filenames are grunt module names
+    # Assumes the filenames are Grunt module names
     for f in grunt/*
     do
       modulename=`basename $f .js`
       npm install $modulename --save-dev
     done
   }
-  ```
-  ##Note
-  Just remember to name your individual module files after their npm counterparts for smooth installin'
+```
+## Note
+Just remember to name your individual module files after their npm counterparts for smooth installin'
