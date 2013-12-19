@@ -10,7 +10,7 @@ I've always wanted to maintain a repo of commonly used Grunt configs, with the a
 
 Use `Gruntfile.js` to define your tasks, and edit the individual tasks as needed per-project.
 
-`Gruntfile.js` will load all the top-level tasks in the `grunt` directory.  To construct a new workflow, just grab what you need from the `archive` directory and move it directly into the `grunt` directory.  
+`Gruntfile.js` will load all the top-level tasks in the `grunt` directory.  To construct a new workflow, just grab what you need from the `archive` directory and move it into the `grunt` directory.  
 
 To share configuration between tasks, add variables to `grunt.initConfig` in `Gruntfile.js`, and call `grunt.config.get('variable')` in the task itself.
 
