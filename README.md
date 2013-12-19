@@ -48,6 +48,8 @@ Finally, for an all-in-one gruntfile import-and-install:
     fi
 
     ghexport jonlong/gruntfile
+    # Don't overwrite a project's README with this one.
+    rm gruntfile/README.md
     mv gruntfile/* .
     rm -r gruntfile
 
