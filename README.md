@@ -2,7 +2,13 @@
 
 A modular, easily configurable Gruntfile.  Graciously shared by [@cowboy](https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb).
 
-Use `.Gruntfile` to define your tasks, and edit the individual tasks as needed per-project.
+Use `Gruntfile.js` to define your tasks, and edit the individual tasks as needed per-project.
+
+`Gruntfile.js` will load all the top-level tasks in the `grunt` directory.  To construct a new workflow, just grab what you need from the `archive` directory and move it directly into `grunt`.  
+
+To share configuration between tasks, add to `grunt.initConfig` in `Gruntfile.js`, and call `grunt.config.get('variable')` in the task itself.
+
+The current example demonstrates a working express server with the port and server script defined by config variables.
 
 A quick way to export this repo into an existing project, sans the `.git` folder:
 `svn export https://github.com/jonlong/gruntfile/trunk gruntfile`
