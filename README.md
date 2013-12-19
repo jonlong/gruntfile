@@ -12,14 +12,16 @@ Use `Gruntfile.js` to define your tasks, and edit the individual tasks as needed
 
 `Gruntfile.js` will load all the top-level tasks in the `grunt` directory.  To construct a new workflow, just grab what you need from the `archive` directory and move it directly into the `grunt` directory.  
 
-To share configuration between tasks, add to `grunt.initConfig` in `Gruntfile.js`, and call `grunt.config.get('variable')` in the task itself.
+To share configuration between tasks, add variables to `grunt.initConfig` in `Gruntfile.js`, and call `grunt.config.get('variable')` in the task itself.
 
-The current example demonstrates a working express server with the port and server script defined by config variables.
+The current example demonstrates a working Express server with the port and server script defined by config variables.
 
 ## Importing into a new project
 
 If you don't want to deal with submodules, here's a quick way to import this repo into an existing project, sans the `.git` folder:
-`svn export https://github.com/jonlong/gruntfile/trunk gruntfile`
+```bash
+svn export https://github.com/jonlong/gruntfile/trunk gruntfile
+```
 
 Alternatively, you can set up a bash function:
 ```bash
@@ -29,8 +31,11 @@ Alternatively, you can set up a bash function:
     svn export https://github.com/$1/trunk $NAME
   }
 ```
+
 And call it like this:
-`ghexport jonlong/gruntfile`
+```bash
+ghexport jonlong/gruntfile
+```
 
 Finally, for an all-in-one gruntfile import-and-install:
 ```bash
