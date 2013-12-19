@@ -2,9 +2,11 @@
 
 A modular, easily configurable Gruntfile.  Graciously shared by [@cowboy](https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb).
 
-## Usage
+##Why
 
 I've always wanted to maintain a repo of commonly used Grunt configs, with the ability to easily toggle them on and off based on a project's needs. The scripts below are designed to help easily import a nice base into your working directory.
+
+## Usage
 
 Use `Gruntfile.js` to define your tasks, and edit the individual tasks as needed per-project.
 
