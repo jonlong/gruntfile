@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   grunt.config('express', {
       options: {
-        script: grunt.config.get('meta.serverPath')
+        script: '../web/backend/app.js'
       },
       dev: {
         options: {

@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.config('connect', {
     options: {
       hostname: '*',
-      base: 'build/wwwroot',
+      base: 'backend',
     },
     dev: {},
     prod: {
