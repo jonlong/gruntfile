@@ -58,7 +58,7 @@ Finally, for an all-in-one gruntfile import-and-install:
 
     # Install all the modules and save them to the package.json
     # Assumes the filenames are Grunt module names
-    for f in grunt/*
+    for f in grunt/*.js
     do
       modulename=`basename $f .js`
       npm install $modulename --save-dev
